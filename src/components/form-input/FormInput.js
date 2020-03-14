@@ -1,9 +1,14 @@
 import React from "react";
 
-const FormInput = () => {
+const FormInput = props => {
   return (
     <div>
-      <input type="text" placeholder="Enter city name..." />
+      <input
+        type="text"
+        value={props.city}
+        onChange={props.handleChange}
+        placeholder="Enter city name..."
+      />
     </div>
   );
 };
